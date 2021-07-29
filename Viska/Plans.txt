@@ -1,0 +1,5 @@
+~~ Health System
+~~ Mana System
+~~ Building abstract class?
+   ~~ Individual buildings (tavern, houses)
+~~
