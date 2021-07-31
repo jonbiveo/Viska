@@ -2,10 +2,5 @@
 ~~ Mana System
 ~~ Building abstract class?
    ~~ Individual buildings (tavern, houses)
-~~
-
-
-Questions ~~
-~~ Should I make methods to make enemies randomly, or use a file to pick random attributes and assign them to a new enemy?
-    ~~ Is there any major differences? (efficiency, ease of use)
+~~ Randomize health, armor, weapon on initialization
 ~~
