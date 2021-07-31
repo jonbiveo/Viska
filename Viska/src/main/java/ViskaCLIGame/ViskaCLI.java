@@ -1,14 +1,13 @@
 package ViskaCLIGame;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class ViskaCLI {
 
     Player player;
     public static final Scanner scanner = new Scanner(System.in);
-    // should i do public static final for scanner class here?
-    // should the scanner for user input even be here?
 
     public void run() {
         while (true) {
@@ -30,13 +29,30 @@ public class ViskaCLI {
 
     public void loadPlayer() { // In run() method
         boolean stay = true;
-        while (stay) {
-            System.out.println("Good morning. What's your name?");
-            String name = scanner.nextLine();
-            player = new Player(name, new BigDecimal("100"));
-            System.out.println("Nice to meet you " + player.getName() + ".");
-            System.out.println("");
+        try {
+            while (stay) {
+                System.out.println("Good morning. What's your name?");
+                String name = scanner.nextLine();
+                if (Objects.equals(name, "*")) {
+                    player = new Player(name, new BigDecimal("100"));
+                    choice1();
+                } else {
+                    System.out.println("Enter a name using regular characters.");
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Don't break my stuff.");
+        }
+    }
 
+    public void choice1() {
+        boolean stay = true;
+        try {
+            while (stay) {
+                System.out.println("Nice to meet you " + player.getName() + ".");
+            }
+        } catch (Exception e) {
+            System.out.println("Don't break it.");
         }
     }
 
