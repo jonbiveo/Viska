@@ -5,9 +5,9 @@ import java.math.BigDecimal;
 public class Player {
 
     private String name;
-    private BigDecimal health;
+    private int health;
 
-    public Player(String name, BigDecimal health) {
+    public Player(String name, int health) {
         this.name = name;
         this.health = health;
     }
@@ -20,11 +20,11 @@ public class Player {
         this.name = name;
     }
 
-    public BigDecimal getHealth() {
+    public int getHealth() {
         return health;
     }
 
-    public void setHealth(BigDecimal health) {
+    public void setHealth(int health) {
         this.health = health;
     }
 }

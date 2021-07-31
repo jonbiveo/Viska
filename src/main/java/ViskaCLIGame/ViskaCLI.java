@@ -17,7 +17,7 @@ public class ViskaCLI {
             int menuInput = scanner.nextInt();
             try {
                 if (menuInput == 1) {
-                    loadPlayer();
+                    greeting();
                 } else if (menuInput == 2) {
                     break;
                 }
@@ -27,22 +27,21 @@ public class ViskaCLI {
         }
     }
 
-    public void loadPlayer() { // In run() method
-        boolean stay = true;
+    public void greeting() {
+        System.out.println("Good morning. What's your name?");
+        int range = (100-50) + 1;
         try {
-            while (stay) {
-                System.out.println("Good morning. What's your name?");
-                String name = scanner.nextLine();
-                if (Objects.equals(name, "*")) {
-                    player = new Player(name, new BigDecimal("100"));
-                    choice1();
-                } else {
-                    System.out.println("Enter a name using regular characters.");
-                }
-            }
+            String name = scanner.next();
+            int healthGetter = 50 + (int)(Math.random() * range);
+            player = new Player(name, healthGetter);
+            choice1();
         } catch (Exception e) {
             System.out.println("Don't break my stuff.");
         }
+    }
+
+    public void displayHealth() {
+        System.out.println("Health: " + player.getHealth());
     }
 
     public void choice1() {
@@ -50,13 +49,33 @@ public class ViskaCLI {
         try {
             while (stay) {
                 System.out.println("Nice to meet you " + player.getName() + ".");
+                displayHealth();
+                System.out.println("You've woken up in a dark-lit, damp cave." +
+                        "\nWhat would you like to do?");
+                System.out.println("1) Check backpack");
+                System.out.println("2) Look around");
+                int choice = scanner.nextInt();
+                if (choice == 1) {
+                    System.out.println("Functionality not implemented yet.");
+                } else if (choice == 2) {
+                    choice2();
+                }
             }
         } catch (Exception e) {
             System.out.println("Don't break it.");
         }
     }
 
-    public void displayMenuOptions() { //In loadPlayer() method
+    public void choice2() {
+        boolean stay = true;
+        try {
+
+        } catch (Exception e) {
+            System.out.println("Don't break it.");
+        }
+    }
+
+    public void displayMenuOptions() {
     }
 
     public static void main(String[] args) {
