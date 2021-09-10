@@ -3,4 +3,5 @@
 ~~ Building abstract class?
    ~~ Individual buildings (tavern, houses)
 ~~ Randomize health, armor, weapon on initialization
+~~ Inventory system
 ~~
