@@ -1,11 +1,15 @@
 package ViskaCLIGame;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Player {
 
     private String name;
     private int health;
+    private List<Object> inventory = new ArrayList<>();
+
 
     public Player(String name, int health) {
         this.name = name;
