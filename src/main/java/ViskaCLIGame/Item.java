@@ -1,9 +1,8 @@
 package ViskaCLIGame;
 
-public class Item {
+public interface Item {
 
-    private Object torch;
-    private Object sword;
-
+    //durability
+    int damage = 0;
 
 }
