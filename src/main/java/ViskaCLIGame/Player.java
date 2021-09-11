@@ -8,7 +8,6 @@ public class Player {
 
     private String name;
     private int health;
-    private List<Object> inventory = new ArrayList<>();
 
 
     public Player(String name, int health) {

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48e4380b-c3e1-47dc-bb3a-eeaa5d841b8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ViskaCLIGame/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Plans.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ViskaCLIGame/Chestplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ViskaCLIGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ViskaCLIGame/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../loganedmonds/module-1/11_Inheritance/lecture-final-2/java" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.CommentHighlighterCustomTokensSettingsPage" />
   </component>
   <component name="RunManager">
     <configuration name="ViskaCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
