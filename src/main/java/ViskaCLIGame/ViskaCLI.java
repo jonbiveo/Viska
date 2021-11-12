@@ -1,6 +1,8 @@
 package ViskaCLIGame;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -8,6 +10,14 @@ public class ViskaCLI {
 
     Player player;
     public static final Scanner scanner = new Scanner(System.in);
+
+    List<Objects>tenBackpack = new ArrayList<>();
+
+    public void checkCapacity(tenBackpack) {
+        if (tenBackpack.size() >= 10) {
+            System.out.println("Your backpack is full! You can only hold so much!");
+        }
+    }
 
     public void run() {
         while (true) {
